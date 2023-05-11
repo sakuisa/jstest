@@ -137,3 +137,9 @@
 // const arr8 = arr4;
 // arr8[0]= 100;
 // console.log(arr4);
+
+// mapやfilterを使った配列の処理
+const nameArr = ["田中","yamada","suzuki"];
+for(let index = 0; index <nameArr.length; index++){
+    console.log(nameArr[index]);
+}
