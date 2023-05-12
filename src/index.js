@@ -150,4 +150,4 @@ const nameArr = ["田中","yamada","suzuki"];
 // console.log(nameArr2);
 
 // nameArr.map((name)=> console.log(name));
-
+//
