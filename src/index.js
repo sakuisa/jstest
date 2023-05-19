@@ -151,3 +151,75 @@ const nameArr = ["田中","yamada","suzuki"];
 
 // nameArr.map((name)=> console.log(name));
 //
+// const nameArr2 = nameArr.map((name)=>{
+//    return name;
+// })
+// console.log(nameArr2);
+
+// 2つ目の引数をとることができ順番に表示可能。テンプレート文字列を使用し番号管理できる
+// nameArr.map((name,index)=> console.log(`${index + 1}番目は${name}です`));
+// nameArr.map((name)=> console.log(`${name}です`));
+
+// filter ある条件に一致したものだけ返却して表示する関す
+
+// const numArr = [1,2,3,4,5];
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 0;
+// });
+// console.log(newNumArr);
+
+// const newNameArr = nameArr.map((name) => {
+//   if (name === "suzuki") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+// console.log(newNameArr);
+
+// 三項演算子
+
+// ある条件？　条件がtrueの時 : 条件がfolseの時
+// const val1 = 1 < 0 ? `trueです` : `falseです`;
+// console.log(val1);
+// if elseみたいなことを1行で記述できるのが三項演算子
+
+// toLocaleString3桁区切りのカンマ表示可能
+// 文字列ではカンマ表示されないので数値を入力してもらうようにする
+
+// const num = '1300';
+// console.log(num.toLocaleString());
+
+// const formattedNum = typeof num === 'number'? num.toLocaleString() : '数値を入力してください'
+// console.log(formattedNum);
+
+// 引数を受け取ってその値が範囲内かチェックしてくれる関数checkSum
+
+// const checkSum = (num1,num2)=> {
+//    return num1 +num2 > 100 ? '100を超えています'　: '許容範囲内です'
+// }
+// console.log(checkSum(50,60));
+
+// 論理演算子の本当の意味を知る
+// if文の中の　&&（かつ） ||（または）と言われているが実際は
+// const flag1 = true ;
+// const flag2 = false;
+
+// if (flag1 || flag2){
+//   console.log("1か2　はtrueになります");
+// }
+// if (flag1 && flag2){
+//   console.log("1も2もtrueになります");
+// }
+
+//  ||は左側がfolseなら右側を返す
+// const num = 100;
+// const fee = num || "金額未設定です"
+// console.log(fee);
+
+// &&は左側がtrueなら右側を返す
+const num2 = null;
+const fee2 = num2 && "何か設定されました";
+console.log(fee2);
+
+// reactのアンパサンドでよく使用する
